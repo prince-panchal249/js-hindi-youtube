@@ -46,3 +46,47 @@ console.log(typeof bigNumber); // undefined
 console.log(typeof myArray); // object
 console.log(typeof myObj); // object
 console.log(typeof myFunction); // function
+
+
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// stack memory (Primitive data types) , heap memory (Non-primitive data types)
+
+// stack memory : memory allocation is done in stack memory for primitive data types
+// heap memory : memory allocation is done in heap memory for non-primitive data types
+// stack memory is faster than heap memory
+// stack memory is limited, heap memory is not limited
+// stack memory is used for static memory allocation, heap memory is used for dynamic memory allocation
+
+
+                                    // stack
+
+                // stack gives copy of the value to another variable thats why value is not changed
+
+
+let myYoutubeName = "hiteshchoudharydotcom"
+
+let anotherName = myYoutubeName
+anotherName = "chaiaurcode"
+
+console.log(myYoutubeName); // hiteshchoudharydotcom  
+console.log(anotherName); // chaiaurcode
+
+
+                                    // heap
+
+                // heap gives reference of the value to another variable thats why value is changed
+
+
+let userOne = {
+    email : "user@gmail.com",
+    upi : "user@okhdfcbank"
+}
+
+let userTwo = userOne
+
+userTwo.email = "prince@google.com"
+
+console.log(userOne.email);  
+console.log(userTwo.email);
