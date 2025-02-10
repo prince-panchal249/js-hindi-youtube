@@ -21,7 +21,7 @@ const anotherId = Symbol('123')
 
 // non-primitive data types or reference data types
 
-// Array, Object, Function // type of non-primitive data types is object, fot function it is object-function
+// Array, Object, Function // type of non-primitive data types is object, for function it is object-function
 // Date, RegExp, Map, Set, WeakMap, WeakSet, etc.
 
 const myArray = ["shaktiman", "nagraj", "doga"]
