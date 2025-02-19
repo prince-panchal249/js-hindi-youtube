@@ -49,14 +49,47 @@ const users = [
 // console.log(users.slice(0,2));
 
 users[1].email
-console.log(tinderuser);
+// console.log(tinderuser);
 
-console.log(Object.keys(tinderuser));
-console.log(Object.values(tinderuser));
-console.log(Object.entries(tinderuser));
+// console.log(Object.keys(tinderuser));
+// console.log(Object.values(tinderuser));
+// console.log(Object.entries(tinderuser));
 
-console.log(tinderuser.hasOwnProperty("isLogged"));
+// console.log(tinderuser.hasOwnProperty("isLogged"));
 
 // console.log(tinderuser.toLocaleString());  // don't know the parameter that's why don't print
 
 // console.log(tinderuser.length);
+
+                                    //  objet de-structure
+
+
+const cource = {
+    courceName: "js in hindi",
+    price: "999",
+    courceInstructor: "hitesh"
+}
+
+// cource.courceInstructor
+
+const {courceInstructor: instructor} = cource  // object de-structure
+
+// console.log(courceInstructor);
+console.log(instructor);
+
+                                        // json API
+
+// {       // its like object, but here keys are also string. in object, keys are not in string
+//     "name": "hitesh",
+//     "courcename": "js in hindi",
+//     "price": "free"
+// }
+
+[
+    {},
+    {},
+    {}
+]
+
+// randomuser me api
+// json formatter
