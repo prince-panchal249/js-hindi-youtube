@@ -25,7 +25,8 @@ for (const greet of greeting) {
 
 // Sets are also iterable objects
 
-const map = new Map();  // key value pair    // map is an object that contain key value pairs there is no duplicate keys always unique keys
+const map = new Map();  // key value pair    // map is an object that contain key value pairs there is no duplicate keys always unique keys     // map is not iterable
+
 map.set('IN', "India")
 map.set('USA', "United States of America")
 map.set('FR', "France")
