@@ -51,6 +51,7 @@ const user = {
 // console.log(addtwo(3, 4))
 
                                         //  type - 2.....
+                                        
 
 // implicit return other name of arrow function
 
