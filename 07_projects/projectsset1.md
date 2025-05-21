@@ -5,7 +5,7 @@
 
 # solution code 
 
-## project 1
+## project 1 solution
 
 ```javascript
 console.log("hitesh")
@@ -31,5 +31,58 @@ buttons.forEach(function (button) {
     }
   });
 });
+
+```
+
+## project 2 solution
+
+```javascript
+const form = document.querySelector('form');
+// this usecase will give you empty
+// const height = parseInt(document.querySelector('#height').value)
+
+form.addEventListener('submit', function (e) {
+  e.preventDefault();
+
+  const height = parseInt(document.querySelector('#height').value);
+  const weight = parseInt(document.querySelector('#weight').value);
+  const results = document.querySelector('#results');
+  // const body = document.getElementsByTagName('body')[0]
+
+  if (height === '' || height < 0 || isNaN(height)) {
+    results.innerHTML = `please enter a valid height ${height}`;
+  } else if (weight === '' || weight < 0 || isNaN(weight)) {
+    results.innerHTML = `please enter a valid height ${weight}`;
+  } else {
+    const bmi = (weight / ((height * height) / 10000)).toFixed(2);
+
+    let message = ""
+
+    if (bmi < 18.6){
+      message = 'under weight'
+    } else if (bmi >= 18.6 && bmi <= 24.9 ){
+      message = 'Normal Weight'
+    } else {
+      message = 'over Weight'
+    }
+
+    // show the result
+    // results.innerHTML = `<span>${bmi}</span>`;
+    // results.innerHTML = `<span>Your BMI is <strong>${bmi}</strong> - <em>${message}</em> </span>`
+    results.innerHTML = `<span> ${bmi}  ${message} </span>`
+  }
+});
+
+// const p = document.createElement('p')
+  // if (bmi < 18.6){
+  //   p.innerHTML = `<span> Under Weight: ${bmi}</span>`;
+  // } else if (bmi >= 18.6 && bmi <= 24.9 ){
+  //   p.innerHTML = `<span> Normal Weight: ${bmi}</span>`;
+  // } else {
+  //   p.innerHTML = `<span> Normal Weight: ${bmi}</span>`;
+  // }
+
+//   p.style.fontSize = '2rem'
+//   results.appendchild(p)
 
 ```
